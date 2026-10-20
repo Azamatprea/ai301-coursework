@@ -8,9 +8,8 @@ format criteria grade exactly that. Your course repo link is the whole submissio
 files and no evidence uploads are part of Assignment 5.
 
 **Contribution Number:** [1]
-**Student:** [Student name]
-**GitHub Username:** [your GitHub username, exactly as it appears on your profile - no @, no
-profile URL. Your comments upstream are identified by this name.]
+**Student:** Azamat Erkinov
+**GitHub Username:** Azamatprea
 **Issue:** [GitHub issue link]
 **Pull Request:** [GitHub PR link, once opened]
 
@@ -55,10 +54,9 @@ happened; these entries are the toolkit's own timeline.
 All four entries are graded. Keep every heading below, and fill each
 one in the week it belongs to.
 
-**Unit 5: [one line on the tool work]**
+**Unit 5: Wrote the scout's search strategy (eight profile-traced gh queries plus free ranking filters) and pre-tested every query against GitHub's search API**
 
-[2-4 sentences: what you built (the scout, your strategy), what broke
-or fell short, what changed because of it.]
+I installed the unit-5 scout over my unit-1 issue-select skill and wrote its search-strategy.md myself: eight `gh search issues` queries, each traced to a sentence of my fit profile (Python RAG and ingestion keyword queries, a newcomer-friendly Python query, a TypeScript variant, and a docs query), plus ranking filters that drop assigned, stale, and frontend-labeled results and order the survivors fewest-comments-first. Before trusting any query I ran it through GitHub's search API to sanity-check result counts; that caught a TypeScript query returning 344k results, which I narrowed with the good-first-issue label, and it also settled that GitHub's issue search has no OR operator, so my keyword variants became separate queries. My drafting sandbox could not run git or the claude CLI, so I fetched the starter repo as a ZIP and packaged the install, first scan, and grading as paste-safe Terminal scripts instead. Whatever the first scan gets wrong will be logged in scan-notes.md the same day.
 
 **Unit 6: [one line on the tool work]**
 
